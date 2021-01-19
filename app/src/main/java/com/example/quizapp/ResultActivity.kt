@@ -15,7 +15,34 @@ class ResultActivity : AppCompatActivity() {
         val correctAnswers=intent.getIntExtra(Constants.CORRECT_ANSWERS,0)
         textViewScore.text="your score is $correctAnswers out of $totalQuestion"
         btn_finish.setOnClickListener {
-            startActivity(Intent(this,MainActivity::class.java))
+            startActivity(
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                Intent(this,MainActivity::class.java))
         }
 
 
