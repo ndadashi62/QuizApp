@@ -4,7 +4,7 @@ object Constants {
 
     const val USER_NAME:String="user_name"
     const val TOTAL_QUESTIONS:String="total_question"
-    const val CORRECT_ANSWERS:String="correct_answers"
+    const val CORRECT_ANSWERS:String="correct answer"
 
 
 
@@ -35,7 +35,7 @@ object Constants {
             optionFour = "Brazil",
             correctAnswer = 2
         )
-        questionList.add(que1)
+        questionList.add(que2)
 
         val que3 = Question(
             3, "what country does this flag belong to?",
@@ -46,9 +46,9 @@ object Constants {
             optionFour = "Canada",
             4
         )
-        questionList.add(que1)
+        questionList.add(que3)
 
-        val que5 = Question(
+        val que4 = Question(
             5, "what country does this flag belong to?",
             R.drawable.ic_flag_of_brazil,
             optionOne = "Brazil",
@@ -57,7 +57,7 @@ object Constants {
             optionFour = "Germany",
             1
         )
-        questionList.add(que1)
+        questionList.add(que4)
 
         val que6 = Question(
             6, "what country does this flag belong to?",
@@ -68,7 +68,7 @@ object Constants {
             optionFour = "Italia",
             3
         )
-        questionList.add(que1)
+        questionList.add(que6)
 
         val que7 = Question(
             7, "what country does this flag belong to?",
@@ -79,7 +79,7 @@ object Constants {
             optionFour = "USA",
             4
         )
-        questionList.add(que1)
+        questionList.add(que7)
 
 
 
