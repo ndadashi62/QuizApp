@@ -1,5 +1,6 @@
 package com.example.quizapp
 
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
 import android.os.Bundle
@@ -81,11 +82,11 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
                         }
                         else -> {
 
-                            Toast.makeText(
-                                this@QuizQuestionsActivity,
-                                "You have successfully completed the quiz.",
-                                Toast.LENGTH_SHORT
-                            ).show()
+                           val intent=Intent(this,ResultActivity::class.java)
+                            intent.putExtra(Constants.USER_NAME,mUserName)
+                            intent.putExtra(Constants.CORRECT_ANSWERS,mCorrectAnswers)
+                            intent.putExtra((Constants.TOTAL_QUESTIONS,mQuestionsList!!.size)
+                            startActivity(intent)
                         }
                     }
                 } else {
